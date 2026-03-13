@@ -5,205 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Portfolio Website - Paras Kumar Khandelwal</title>
+    <title>Paras Kumar | Full Stack Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        /* Smooth scrolling for better UX */
+        html { scroll-behavior: smooth; }
+        .footer { padding: 2rem; background: #343d68; text-align: center; color: white; }
+        .footer-icons { display: flex; justify-content: center; gap: 2rem; font-size: 2rem; margin-top: 1rem; }
+        .footer-icons a { color: white; transition: 0.3s; }
+        .footer-icons a:hover { color: #e84949; }
+        .resume-btn { text-decoration: none; display: inline-block; margin-top: 1rem; }
+    </style>
 </head>
 <body>
     <div id="wrapper">
         <div class="container">
-            <div class="navbar">
+            <nav class="navbar">
                 <div class="logo-container">
-                    <img src="./images/name logo/p.png" class="logo">
+                    <img src="./images/name logo/p.png" class="logo" alt="P">
                     <div class="logo-text">aras Kumar Khandelwal</div> 
                 </div>
                 <div class="nav-items">
                     <div><a href="#projects">Projects</a></div>
-                     <div><a href="#skills">Skills</a></div>
-                     <div><a href="#contectme">Contact Me</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
                 </div>
-                
-            </div>
+            </nav>
         </div>
-        <div class="hero-section">
-            <div class="absolute faded-text">Paras Kumar Khandelwal</div>
+
+        <section class="hero-section">
+            <div class="absolute faded-text">Paras Kumar</div>
             <div class="hero-section-left">
-                <div class="hero-section-heading">Hi! Paras Kumar </div>
-                <div class=" hero-section-heading hero-section-sub-heading">
+                <div class="hero-section-heading">Hi! I'm Paras</div>
+                <div class="hero-section-heading hero-section-sub-heading">
                     I am a <span class="role"></span>
                 </div>
-                <div class="hero_section-description">I am a software developer and here is my portfolio wedsite. Here you'll learn about my jourey as a software developer. </div>
-                <div class="btn-pink" id="btn">Hire me</div>
+                <div class="hero_section-description">
+                    I am a software developer at <strong>MITS-DU</strong>. I specialize in building robust web applications using the <strong>MERN stack</strong> and <strong>Next.js</strong>. Currently, I am scaling my expertise in System Design and preparing for <strong>GSoC</strong>.
+                </div>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="#contactme" class="btn-pink" id="btn">Hire me</a>
+                    <a href="https://drive.google.com/file/d/11LhUBdsIoAU_OSChcArDIMsIWgHk-1BL/view?usp=drive_link" target="_blank" class="btn-pink" style="background-color: #343d68; border: none;">View Resume</a>
+                </div>
             </div>
             <div class="hero-section-right">
-                <div class="absolute icons icon-dots">
-                    <img src="./images/user/dots2.png" alt="">
-                </div>
-                <div class="absolute icons icon-cube">
-                    <img src="./images/user/cube.png" alt="">
-                </div>
-                <div class="absolute icons icon-circle">
-                    <img src="./images/user/circle.png" alt="">
-                </div>
+                <div class="absolute icons icon-dots"><img src="./images/user/dots2.png" alt=""></div>
+                <div class="absolute icons icon-cube"><img src="./images/user/cube.png" alt=""></div>
+                <div class="absolute icons icon-circle"><img src="./images/user/circle.png" alt=""></div>
                 <div class="user-image">
-                    <img src="./images/user/paras1.jpg"  alt="">
+                    <img src="./images/user/paras1.jpg" alt="Paras Kumar Photo">
                 </div>
             </div>
-            
-        </div>
-        <div id="projects"  class="project-section">
-            <h2 class="project-heading">Projects</h2>
+        </section>
 
+        <section id="projects" class="project-section">
+            <h2 class="project-heading">My Projects</h2>
             <div class="project-container">
+                
                 <div class="project-card" id="project1">
                     <div class="project-number project-number-right">01</div>
                     <div class="project-content project-content-left">
-
                         <div class="project-skill-container">
-                            <img src="./images/HTML5.png" alt="HTML5" class="project-skill">
-                            <img src="./images/css.png" alt="CSS" class="project-skill">
-                            <img src="./images/javascript.png" alt="JavaScript" class="project-skill">
-                            <img src="./images/express.png" alt="Express" class="project-skill">
-                            <img src="./images/node js.png" alt="Node.js" class="project-skill">
-                            <img src="./images/tailwind.png" alt="Tailwind" class="project-skill">
-                            <img src="./images/mongodb.png" alt="MongoDB" class="project-skill">
-                            <img src="./images/react.png" alt="React" class="project-skill">
+                            <img src="./images/nextjs.png" alt="Next.js" class="project-skill">
+                            <img src="./images/typescript.png" alt="TS" class="project-skill">
+                            <img src="./images/docker.png" alt="Docker" class="project-skill">
+                            <img src="./images/node js.png" alt="Node" class="project-skill">
                         </div>
-                        
-                        <h2 class="project-head">Tint & Orange</h2>
-
-                        <p class="project-subHeading">Its is a car modification copany 
-                            which provide you sheets to protect your car from scratch
+                        <h2 class="project-head">NexusIDE</h2>
+                        <p class="project-subHeading">
+                            A high-performance Collaborative Code Editor. Features real-time multi-user editing, 
+                            containerized code execution via Docker, and low-latency communication using Redis.
                         </p>
                         <div class="btn-grp">
                             <button class="btn-pink btn-project">Read More</button>
-                            <a href="">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
+                            <a href="#"><i title="GitHubLink" class="fa-brands fa-github icon"></i></a>
+                            <a href="#"><i title="Live Link" class="fa-solid fa-link icon"></i></a>
                         </div>
-
-
-                       
-                        
                     </div>
                 </div>
+
                 <div class="project-card" id="project2">
                     <div class="project-number project-number-left">02</div>
                     <div class="project-content project-content-right">
-
                         <div class="project-skill-container">
-                            <img src="./images/HTML5.png" alt="HTML5" class="project-skill">
-                            <img src="./images/css.png" alt="CSS" class="project-skill">
-                            <img src="./images/javascript.png" alt="JavaScript" class="project-skill">
-                            <img src="./images/express.png" alt="Express" class="project-skill">
-                            <img src="./images/node js.png" alt="Node.js" class="project-skill">
-                            <img src="./images/tailwind.png" alt="Tailwind" class="project-skill">
-                            <img src="./images/mongodb.png" alt="MongoDB" class="project-skill">
                             <img src="./images/react.png" alt="React" class="project-skill">
+                            <img src="./images/mongodb.png" alt="MongoDB" class="project-skill">
+                            <img src="./images/tailwind.png" alt="Tailwind" class="project-skill">
                         </div>
-                        
-                        <h2 class="project-head">Tint & Orange</h2>
-
-                        <p class="project-subHeading">Its is a car modification copany 
-                            which provide you sheets to protect your car from scratch
+                        <h2 class="project-head">Sentinel EWS</h2>
+                        <p class="project-subHeading">
+                            Disaster Early Warning System. Utilizes AI integration for threat detection 
+                            and offline-first capabilities to assist rural areas during emergencies.
                         </p>
                         <div class="btn-grp">
                             <button class="btn-pink btn-project">Read More</button>
-                            <a href="" title="GitHubLink"> <i class="fab fa-github icon"></i> </a> <a href="" title="Live Link"> <i class="fas fa-link icon"></i> </a>
+                            <a href="#"><i class="fab fa-github icon"></i></a>
+                            <a href="#"><i class="fas fa-link icon"></i></a>
                         </div>
-
-
-                       
-                        
                     </div>
                 </div>
+
                 <div class="project-card" id="project3">
                     <div class="project-number project-number-right">03</div>
                     <div class="project-content project-content-left">
-
                         <div class="project-skill-container">
-                            <img src="./images/HTML5.png" alt="HTML5" class="project-skill">
-                            <img src="./images/css.png" alt="CSS" class="project-skill">
-                            <img src="./images/javascript.png" alt="JavaScript" class="project-skill">
-                            <img src="./images/express.png" alt="Express" class="project-skill">
-                            <img src="./images/node js.png" alt="Node.js" class="project-skill">
-                            <img src="./images/tailwind.png" alt="Tailwind" class="project-skill">
-                            <img src="./images/mongodb.png" alt="MongoDB" class="project-skill">
-                            <img src="./images/react.png" alt="React" class="project-skill">
+                            <img src="./images/git.png" alt="Git" class="project-skill">
+                            <img src="./images/github.png" alt="GitHub" class="project-skill">
                         </div>
-                        
-                        <h2 class="project-head">Tint & Orange</h2>
-
-                        <p class="project-subHeading">Its is a car modification copany 
-                            which provide you sheets to protect your car from scratch
+                        <h2 class="project-head">Open Source Contributions</h2>
+                        <p class="project-subHeading">
+                            Active contributor to various repositories including <strong>ccsync</strong>. 
+                            Focused on improving code quality and adding community-requested features.
                         </p>
                         <div class="btn-grp">
-                            <button class="btn-pink btn-project">Read More</button>
-                            <a href="">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
+                            <button class="btn-pink btn-project">View Profile</button>
+                            <a href="#"><i class="fa-brands fa-github icon"></i></a>
                         </div>
-
-
-                       
-                        
-                    </div>
-                </div>
-                <div class="project-card" id="project4">
-                    <div class="project-number project-number-left">04</div>
-                    <div class="project-content project-content-right">
-
-                        <div class="project-skill-container">
-                            <img src="./images/HTML5.png" alt="HTML5" class="project-skill">
-                            <img src="./images/css.png" alt="CSS" class="project-skill">
-                            <img src="./images/javascript.png" alt="JavaScript" class="project-skill">
-                            <img src="./images/express.png" alt="Express" class="project-skill">
-                            <img src="./images/node js.png" alt="Node.js" class="project-skill">
-                            <img src="./images/tailwind.png" alt="Tailwind" class="project-skill">
-                            <img src="./images/mongodb.png" alt="MongoDB" class="project-skill">
-                            <img src="./images/react.png" alt="React" class="project-skill">
-                        </div>
-                        
-                        <h2 class="project-head">Tint & Orange</h2>
-
-                        <p class="project-subHeading">Its is a car modification copany 
-                            which provide you sheets to protect your car from scratch
-                        </p>
-                        <div class="btn-grp">
-                            <button class="btn-pink btn-project">Read More</button>
-                            <a href="">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
-                        </div>
-
-
-                       
-                        
                     </div>
                 </div>
             </div>
-        </div>
-        <div id = skills class="skills-container">
+        </section>
+
+        <section id="skills" class="skills-container">
             <div class="skill-fade-text">Skills</div>
             <div class="skill-container-left">
-                <h2 class="skill-heading">
-                    <span class="caps">M</span>e and
-                    <br>
-                    MyTech Stack
-                </h2>
+                <h2 class="skill-heading"><span class="caps">E</span>ducation & Stack</h2>
                 <div class="skill-subHeading">
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex nesciunt voluptatibus accusamus dicta, repellat laborum itaque doloremque vel commodi! Sequi dolorum cupiditate hic totam incidunt doloribus voluptatum numquam officiis!</P>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex nesciunt voluptatibus accusamus dicta, repellat laborum itaque doloremque vel commodi! Sequi dolorum cupiditate hic totam incidunt doloribus voluptatum numquam officiis!</P>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex nesciunt voluptatibus accusamus dicta, repellat laborum itaque doloremque vel commodi! Sequi dolorum cupiditate hic totam incidunt doloribus voluptatum numquam officiis!</P>
+                    <p><strong>B.Tech in CSE at MITS-DU</strong><br>Currently maintaining a CGPA of 7.16 with a deep focus on Data Structures and System Design.</p>
+                    <p>My tech stack is built for modern scalability: <strong>Next.js, TypeScript, Node.js, and Docker</strong>. I use Ubuntu as my primary OS to ensure a robust DevOps-aligned workflow.</p>
+                    <p>I am driven by the goal of building high-impact software that solves real-world problems.</p>
                 </div>
             </div>
             <div class="skill-container-right">
@@ -217,49 +147,52 @@
                 <img src="./images/tailwind.png" alt="" class="skills-logo">
                 <img src="./images/git.png" alt="" class="skills-logo">
                 <img src="./images/github.png" alt="" class="skills-logo">
-                <img src="./images/express.png" alt="" class="skills-logo">
                 <img src="./images/docker.png" alt="" class="skills-logo">
                 <img src="./images/Mongodb.png" alt="" class="skills-logo">
             </div>
-        </div>
-        <div id=contectme class="contect-me" >
+        </section>
+
+        <section id="contactme" class="contect-me">
             <div class="container">
-                <h1 class="main-heading">Contect me</h1>
-                <h3 class="sub-heading-contect">Question dought</h3>
-
+                <h1 class="main-heading">Contact Me</h1>
+                <h3 class="sub-heading-contect">Have a question or a project idea? Let's talk!</h3>
                 <div class="form-container">
-                    <form action="">
+                    <form action="#">
                         <div class="form-filed-contanir">
-                            <input class="form-field" 
-                            type="text"
-                            name="name"
-                            id=""
-                            placeholder="Enter your name"/>
-                            <input class="form-field" type="email" name="email" id="" placeholder="Enter your email">
-                            <input class="form-field" type="text" name="subject" id="" placeholder="Enter your subject">
-                            <textarea name="messege" cols="30" rows="10"
-                            class="form-text"
-                            placeholder="Enter text"
-                            ></textarea>
+                            <input class="form-field" type="text" placeholder="Enter your name"/>
+                            <input class="form-field" type="email" placeholder="Enter your email">
+                            <input class="form-field" type="text" placeholder="Enter your subject">
+                            <textarea name="message" cols="30" rows="10" class="form-text" placeholder="Enter your message"></textarea>
                         </div>
+                        <button type="submit" class="btn-pink" id="submit-btn">
+                            Send Message <i class="submit-icon fa-solid fa-paper-plane"></i>
+                        </button>
                     </form>
-                     <button type="submit" class="btn-pink" id="submit-btn">Send Message <i class="submit-icon fa-solid fa-paper-plane"></i></button>
                 </div>
-               
             </div>
+        </section>
 
-        </div>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Paras Kumar Khandelwal. Built with ❤️ and Code.</p>
+                <div class="footer-icons">
+                    <a href="https://github.com/your-username"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/your-profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <script>
       var typeData = new Typed(".role", {
         strings: [
           "Full Stack Developer",
-          "Web Developer",
-          "UI-UX Designer",
-          "Backend Developer",
-          "Coder",
+          "Open Source Contributor",
+          "Next.js Developer",
+          "Backend Engineer",
+          "Competitive Programmer",
         ],
         loop: true,
         typeSpeed: 100,
